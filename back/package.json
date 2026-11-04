@@ -1,8 +1,7 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API de Mailini : agent IA d'analyse et de rédaction d'emails",
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",

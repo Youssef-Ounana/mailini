@@ -81,7 +81,7 @@ export async function completeJSON({ system, user, schema, name }) {
   const result = schema.safeParse(data)
   if (!result.success) {
     console.error('[llm] JSON hors schéma :', result.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`))
-    throw new AppError(502, 'LLM_INVALID_OUTPUT', "L'IA a renvoyé une analyse invalide. Réessayez.")
+    throw new AppError(502, 'LLM_INVALID_OUTPUT', "L'IA a renvoyé une réponse invalide. Réessayez.")
   }
 
   return result.data

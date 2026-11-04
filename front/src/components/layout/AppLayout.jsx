@@ -43,7 +43,7 @@ function Logo({ className = '' }) {
       <div className="flex size-8 items-center justify-center rounded-lg bg-slate-900 text-white">
         <Mail className="size-4" />
       </div>
-      <span className="font-semibold text-slate-900">Email Assistant</span>
+      <span className="font-semibold text-slate-900">Mailini</span>
     </div>
   )
 }
